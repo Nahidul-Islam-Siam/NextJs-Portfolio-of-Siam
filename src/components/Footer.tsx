@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="md:flex md:justify-between md:items-center">
           <div className="text-2xl font-semibold mb-6 md:mb-0">
-            iNoah
+            SAM
           </div>
           <div className="mb-6 md:mb-0 md:flex md:space-x-12">
             <ul className="space-y-4">

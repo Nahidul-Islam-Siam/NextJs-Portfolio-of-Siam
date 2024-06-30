@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <About/>
-      <VerticalTimeline/>
+      {/* <VerticalTimeline/> */}
       <PreviousWork/>
       <ContactCard/>
       <HireMeCard/>

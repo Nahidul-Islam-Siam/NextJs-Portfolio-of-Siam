@@ -20,13 +20,13 @@ const Hero: React.FC = () => {
         <h2 className="text-xl md:text-2xl mb-8">
           This website is for me to showcase my previous projects and achievements, hope you enjoy your stay!
           <p>
-            This website was created using <span className=''>Next.js 13</span> and <span>Taliwindcss</span>
+            This website was created using <span className=''>Next.js [latest]</span> and <span>Taliwindcss</span>
           </p>
         </h2>
         <div className="flex justify-center space-x-4">
           <ButtonLink className="bg-white text-blue-600 font-semibold px-6 py-2 rounded-md hover:bg-gray-100" buttonText='Previous Work' elementId='previouswork'/>
           <button className="bg-transparent border-2 border-white text-white font-semibold px-6 py-2 rounded-md hover:bg-white hover:text-blue-600">
-            <Link href='https://resume.io/r/kpSyznSzv' target='_blank'>
+            <Link href='https://drive.google.com/file/d/1oTGujjiuwF4O9Ok1rKrIv598nItsQhQH/view?usp=sharing' target='_blank'>
               Resume
             </Link>
           </button>
