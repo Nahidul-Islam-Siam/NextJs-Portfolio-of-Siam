@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaDiscord, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaDiscord, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa'
 import { ButtonLink } from './Scroller';
 
 const Footer: React.FC = () => {
@@ -24,14 +24,14 @@ const Footer: React.FC = () => {
               </li>
             </ul>
             <div className="flex space-x-6">
-              <Link href="https://github.com/NoahGdev" target='_blank'>
+              <Link href="https://github.com/Nahidul-Islam-Siam/" target='_blank'>
                 <FaGithub size={36}/>
               </Link>
-              <Link href="https://www.linkedin.com/in/noah-gomes" target='_blank'>
+              <Link href="https://www.linkedin.com/in/nahidul-islam-siam/" target='_blank'>
                 <FaLinkedin size={36}/>
               </Link>
-              <Link href="https://discord.gg/wDdeQ2bEbG" target='_blank'>
-                <FaDiscord size={36}/>
+              <Link href="https://www.facebook.com/nahidulislam.siam.39" target='_blank'>
+                <FaFacebook size={36}/>
               </Link>
             </div>
           </div>

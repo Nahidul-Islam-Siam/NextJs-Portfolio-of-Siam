@@ -19,13 +19,13 @@ const ContactCard: React.FC = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                    <a href="https://github.com/NoahGdev" target="_blank" rel="noreferrer" className="hover:text-gray-200">
+                    <a href="https://github.com/Nahidul-Islam-Siam/" target="_blank" rel="noreferrer" className="hover:text-gray-200">
                         <FaGithub size={44} />
                     </a>
-                    <a href="https://www.linkedin.com/in/noah-gomes" target="_blank" rel="noreferrer" className="hover:text-gray-200">
+                    <a href="https://www.linkedin.com/in/nahidul-islam-siam/" target="_blank" rel="noreferrer" className="hover:text-gray-200">
                         <FaLinkedin size={44} />
                     </a>
-                    <a href="https://discord.gg/wDdeQ2bEbG" target="_blank" rel="noreferrer" className="hover:text-gray-200">
+                    <a href="https://www.facebook.com/nahidulislam.siam.39" target="_blank" rel="noreferrer" className="hover:text-gray-200">
                         <FaFacebook size={44} />
                     </a>
                 </div>

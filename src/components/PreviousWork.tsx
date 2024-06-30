@@ -1,80 +1,89 @@
-const projects = [
+import React from 'react';
+
+const PreviousWork: React.FC = () => {
+  const projects = [
     {
-      title: 'Ambush.IO',
-      description: '(Software Developer) SaaS Company built for the sneaker reselling industry to allow users to mass enter raffles through the use of HTTP requests and more. Check out more by clicking on me!',
-      imageUrl: 'https://pbs.twimg.com/profile_banners/1425260143227416579/1634063170/600x200',
-      caseStudyUrl: '#'
-    },
-    {
-      title: 'Liquid Tools',
-      description: '(Founder + Developer) SaaS company built in the sneaker reselling industry consisting of tools to simplify user experience and increase effiency. Check Out Repo and Live website here!',
-      imageUrl: 'https://pbs.twimg.com/profile_banners/1513162011835834372/1670196785/600x200',
-      caseStudyUrl: 'https://github.com/NoahGdev/LiquidTools',
-    },
-    {
-      title: 'Church Website revamp',
-      description: 'Simple website I made for free to improve on current outdated website for my church!',
-      imageUrl: 'https://media.discordapp.net/attachments/881992483603611708/1098721882292887663/image.png?width=1377&height=676',
+      title: 'WorkTrack',
+      description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
+      imageUrl: 'https://i.postimg.cc/KvN5LyMq/untitled.png',
       caseStudyUrl: '#',
+      liveLink: '#',
+      githubLink: '#',
+      technologies: ['React', 'Node.js', 'Express']
+    },
+    {
+      title: 'SAM Blog',
+      description: 'SaaS company built in the sneaker reselling industry consisting of tools to simplify user experience and increase efficiency.',
+      imageUrl: 'https://i.postimg.cc/C5ZsVZ1z/SAM-BLOG.png',
+      caseStudyUrl: 'https://github.com/NoahGdev/LiquidTools',
+      liveLink: 'https://liquidtools.com',
+      githubLink: 'https://github.com/NoahGdev/LiquidTools',
+      technologies: ['React', 'Redux', 'Firebase']
+    },
+    {
+      title: 'Church Website Revamp',
+      description: 'Simple website I made for free to improve on current outdated website for my church.',
+      imageUrl: 'https://i.postimg.cc/4Np7rv5r/Sam-s-Travel.png',
+      caseStudyUrl: '#',
+      liveLink: '#',
+      githubLink: '#',
+      technologies: ['HTML', 'CSS', 'JavaScript']
     },
     {
       title: 'Freelance Work',
-      description: 'I have completed various projects from discord bots to websites with payment integrations and much more!',
-      imageUrl: 'https://images.ctfassets.net/qr8kennq1pom/1FwKqQoHL68jdVhdkJBJcI/12576e11f3d925df875ebdcb38db9f0a/Freelance.jpg',
+      description: 'I have completed various projects from discord bots to websites with payment integrations and much more.',
+      imageUrl: 'https://i.postimg.cc/SNtNsDrX/Vite-React.png',
       caseStudyUrl: '#',
+      liveLink: '#',
+      githubLink: '#',
+      technologies: ['Python', 'Django', 'React']
     },
     {
       title: 'Podcast App',
-      description: 'An app created with react-native and expo for my church where podcasts could be streamed live or listned back to. The app displayed different stacks for logged in\
-      and logged out users, saved sessions and this is where I learned about authentication with sign up and sign in.',
+      description: 'An app created with react-native and expo for my church where podcasts could be streamed live or listened back to.',
       imageUrl: 'https://media.discordapp.net/attachments/1123342178991734795/1165465536658931712/image1.jpeg?ex=6546f35d&is=65347e5d&hm=6826bde1839e5f938f4cfc9f419edf3ddc1b0c67793366b732ce5d87a0beaea9&=&width=1014&height=676',
       caseStudyUrl: '#',
+      liveLink: '#',
+      githubLink: '#',
+      technologies: ['React Native', 'Expo', 'Firebase']
     },
     {
-      title: 'This website ✨',
-      description: 'Portfolio website built in Next.js 13 to showcase my projects, experience and resume through a cooler way. Checkout the repo and more by clicking on me.',
+      title: 'This Website ✨',
+      description: 'Portfolio website built in Next.js 13 to showcase my projects, experience and resume through a cooler way.',
       imageUrl: 'https://nextjs.org/static/blog/next-13/twitter-card.png',
       caseStudyUrl: 'https://github.com/NoahGdev/Portfolio-Website',
+      liveLink: 'https://yourportfolio.com',
+      githubLink: 'https://github.com/NoahGdev/Portfolio-Website',
+      technologies: ['Next.js', 'Tailwind CSS']
     }
   ];
 
-  const PreviousWork: React.FC = () => {
-    return (
-      <div id='previouswork' className="bg-transparent text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight text-center mb-20">Previous Projects</h2>
-          <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-            {projects.map((project) => (
-              <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a]">
-                <div className="flex-shrink-0">
-                  <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.title} />
+  return (
+    <section className="bg-transparent  dark:bg-gray-900">
+      <div className="container px-6 py-10 mx-auto">
+        <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Portfolio</h1>
+        <p className="mt-4 text-center text-gray-500 dark:text-gray-300">
+          Here are some of the projects I&lsquo;ve worked on. Click to learn more!
+        </p>
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+          {projects.map((project, index) => (
+            <div key={index} className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+              style={{ backgroundImage: `url(${project.imageUrl})` }}>
+              <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
+                <h2 className="mt-4 text-xl font-semibold text-white capitalize">{project.title}</h2>
+                <p className="mt-2 text-lg text-gray-300">{project.description}</p>
+                <div className="flex mt-4 space-x-4">
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Live</a>
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>
                 </div>
-                <div className="flex-1 bg-transparent p-6 flex flex-col justify-between pw-bg">
-                  <div className="flex-1">
-                    {project.caseStudyUrl !== '#' ? (
-                      <a href={project.caseStudyUrl} target='_blank' rel='noopener noreferrer'>
-                        <div className="block mt-2">
-                          <p className="text-xl font-semibold text-gray-300">{project.title}</p>
-                          <p className="mt-3 text-base text-gray-300">{project.description}</p>
-                        </div>
-                      </a>
-                    ) : (
-                      <a>
-                        <div className="block mt-2">
-                          <p className="text-xl font-semibold text-gray-300">{project.title}</p>
-                          <p className="mt-3 text-base text-gray-300">{project.description}</p>
-                        </div>
-                      </a>
-                    )}
-                  </div>
-                </div>
+                <p className="mt-4 text-sm text-gray-400">Technologies: {project.technologies.join(', ')}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    );
-  };
-  
-  export default PreviousWork;
-  
+    </section>
+  );
+};
+
+export default PreviousWork;

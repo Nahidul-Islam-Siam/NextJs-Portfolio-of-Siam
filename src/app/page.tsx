@@ -9,7 +9,7 @@ import Navbar from '@/components/NavBar'
 
 export default function Home() {
   return (
-    <>
+    <div className='overflow-hidden'>
       <Navbar/>
       <Hero/>
       <About/>
@@ -18,6 +18,6 @@ export default function Home() {
       <ContactCard/>
       <HireMeCard/>
       <Footer/>
-    </>
+    </div>
   )
 }

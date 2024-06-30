@@ -1,6 +1,6 @@
 "use client";
 
-export const scrollToElement = (elementId: string) => {
+export const scrollToElement = (elementId: string): void => {
   const element = document.getElementById(elementId);
   
   if (element) {
@@ -9,7 +9,7 @@ export const scrollToElement = (elementId: string) => {
 };
 
 interface ButtonLinkProps {
-  className: string;
+  className?: string;
   buttonText: string;
   elementId: string;
 }
