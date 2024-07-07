@@ -7,45 +7,45 @@ const PreviousWork: React.FC = () => {
       description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
       imageUrl: 'https://i.postimg.cc/KvN5LyMq/untitled.png',
       caseStudyUrl: '#',
-      liveLink: '#',
-      githubLink: '#',
-      technologies: ['React', 'Node.js', 'Express']
+      liveLink: 'https://worktrack-employee-management.netlify.app/',
+      githubLink: 'https://github.com/Nahidul-Islam-Siam/WorkTrack-Client',
+      technologies: ['React', 'Node.js', 'Express','NextJs','MongoDB','etc']
     },
     {
       title: 'SAM Blog',
       description: 'SaaS company built in the sneaker reselling industry consisting of tools to simplify user experience and increase efficiency.',
       imageUrl: 'https://i.postimg.cc/C5ZsVZ1z/SAM-BLOG.png',
-      caseStudyUrl: 'https://github.com/NoahGdev/LiquidTools',
-      liveLink: 'https://liquidtools.com',
-      githubLink: 'https://github.com/NoahGdev/LiquidTools',
-      technologies: ['React', 'Redux', 'Firebase']
+      caseStudyUrl: '#',
+      liveLink: 'https://samblog-176bb.web.app/',
+      githubLink: 'https://github.com/Nahidul-Islam-Siam/SamBlog-Website',
+      technologies: ['React', 'NodeJs', 'Firebase']
     },
     {
-      title: 'Church Website Revamp',
+      title: 'SAM Travel',
       description: 'Simple website I made for free to improve on current outdated website for my church.',
       imageUrl: 'https://i.postimg.cc/4Np7rv5r/Sam-s-Travel.png',
       caseStudyUrl: '#',
       liveLink: '#',
       githubLink: '#',
-      technologies: ['HTML', 'CSS', 'JavaScript']
+      technologies: ['HTML', 'CSS', 'JavaScript','TailwindCss']
     },
     {
-      title: 'Freelance Work',
+      title: 'Book Vibe',
       description: 'I have completed various projects from discord bots to websites with payment integrations and much more.',
       imageUrl: 'https://i.postimg.cc/SNtNsDrX/Vite-React.png',
       caseStudyUrl: '#',
       liveLink: '#',
       githubLink: '#',
-      technologies: ['Python', 'Django', 'React']
+      technologies: ['HTML', 'CSS']
     },
     {
-      title: 'Podcast App',
+      title: 'Sam Craft',
       description: 'An app created with react-native and expo for my church where podcasts could be streamed live or listened back to.',
-      imageUrl: 'https://media.discordapp.net/attachments/1123342178991734795/1165465536658931712/image1.jpeg?ex=6546f35d&is=65347e5d&hm=6826bde1839e5f938f4cfc9f419edf3ddc1b0c67793366b732ce5d87a0beaea9&=&width=1014&height=676',
+      imageUrl: 'https://i.postimg.cc/DydpPw0L/Sam-Craft.png',
       caseStudyUrl: '#',
-      liveLink: '#',
-      githubLink: '#',
-      technologies: ['React Native', 'Expo', 'Firebase']
+      liveLink: 'https://craft-store-client.web.app/',
+      githubLink: 'https://github.com/Nahidul-Islam-Siam/Craft-Art-Website',
+      technologies: ['React', 'Express JS', 'Firebase']
     },
     {
       title: 'This Website ✨',
@@ -59,9 +59,9 @@ const PreviousWork: React.FC = () => {
   ];
 
   return (
-    <section className="bg-transparent  dark:bg-gray-900">
+    <section id='previouswork' className="bg-transparent  dark:bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Portfolio</h1>
+        <h1 className="text-2xl font-semibold text-center  capitalize lg:text-3xl text-white">Portfolio</h1>
         <p className="mt-4 text-center text-gray-500 dark:text-gray-300">
           Here are some of the projects I&lsquo;ve worked on. Click to learn more!
         </p>
