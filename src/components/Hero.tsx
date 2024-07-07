@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div id='hero' className="relative h-screen flex items-center justify-center hdr dark:bg-gray-100 dark:text-gray-800">
+    <div id='hero' className="relative flex items-center justify-center hdr dark:bg-gray-100 dark:text-gray-800">
       <svg className="absolute left-0 top-0 right-99 z-[-1]" viewBox="0 0 800 800">
         <defs>
           <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
