@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl"><span className="animated-gradient">Welcome to my portfolio!</span> 👋</h1>
           <h2 className="text-xl md:text-2xl mb-8 mt-4">This website is for me to showcase my previous projects and achievements, hope you enjoy your stay!
-            <p>This website was created using <span>Next.js</span> and <span>Tailwind CSS</span></p>
+            <p>This website was created using <span>Next.js, <span>TypeScript</span></span> and <span>Tailwind CSS</span> </p>
           </h2>
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
           <a href="#previouswork" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
