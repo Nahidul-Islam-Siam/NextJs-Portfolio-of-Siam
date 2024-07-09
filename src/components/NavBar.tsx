@@ -3,11 +3,10 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ButtonLink } from './Scroller';
-import {  FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
 
 const Navbar: React.FC = () => {
-
   const [scrolling, setScrolling] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -29,15 +28,15 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className={`fixed  w-full bg-transparent z-50 mnhdr h-auto transition-all ${scrolling ? 'blur-background' : ''} ${mobileMenuOpen ? 'h-24 blur-background' : ''}`}>
-      <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-semibold text-gray-800 text-white">
+    <header className={`fixed w-full z-50 mnhdr h-auto transition-all ${scrolling ? 'blur-background' : ''} ${mobileMenuOpen ? 'h-24 blur-background' : ''}`}>
+      <nav className="container mx-auto px-6 py-3 flex justify-between items-center bg-transparent dark:bg-gray-900 text-white dark:text-gray-100">
+        <Link href="/" className="text-2xl font-semibold">
           SAM
         </Link>
         <div className="hidden md:flex space-x-6">
-          <ButtonLink className="text-lg font-medium text-gray-800 text-white hover:text-gray-300" buttonText='Home' elementId='hero'/>
-          <ButtonLink className="text-lg font-medium text-gray-800 text-white hover:text-gray-300" buttonText='Previous Work' elementId='previouswork'/>
-          <ButtonLink className="text-lg font-medium text-gray-800 text-white hover:text-gray-300" buttonText='Contact' elementId='contact'/>
+          <ButtonLink className="text-lg font-medium hover:text-gray-300" buttonText='Home' elementId='hero'/>
+          <ButtonLink className="text-lg font-medium hover:text-gray-300" buttonText='Previous Work' elementId='previouswork'/>
+          <ButtonLink className="text-lg font-medium hover:text-gray-300" buttonText='Contact' elementId='contact'/>
         </div>
         <div className="flex space-x-4">
           <button
@@ -45,7 +44,7 @@ const Navbar: React.FC = () => {
             onClick={toggleMobileMenu}
           >
             <svg
-              className="w-6 h-6 text-gray-800 text-white"
+              className="w-6 h-6"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -66,9 +65,9 @@ const Navbar: React.FC = () => {
       </nav>
       <div className={`md:hidden ${mobileMenuOpen ? 'flex' : 'hidden'} justify-between mt-4 mb-6 ml-5`}>
         <div className="flex flex-col space-y-4">
-          <ButtonLink className="text-left text-lg font-medium text-gray-800 text-white hover:text-gray-200 hover:text-gray-400" buttonText='Home' elementId='hero'/>
-          <ButtonLink className="text-left text-lg font-medium text-gray-800 text-white hover:text-gray-200 hover:text-gray-400" buttonText='Previous Work' elementId='previouswork'/>
-          <ButtonLink className="text-left text-lg font-medium text-gray-800 text-white hover:text-gray-200 hover:text-gray-400" buttonText='Contact' elementId='contact'/>
+          <ButtonLink className="text-left text-lg font-medium hover:text-gray-200" buttonText='Home' elementId='hero'/>
+          <ButtonLink className="text-left text-lg font-medium hover:text-gray-200" buttonText='Previous Work' elementId='previouswork'/>
+          <ButtonLink className="text-left text-lg font-medium hover:text-gray-200" buttonText='Contact' elementId='contact'/>
         </div>
         <div className="flex items-center mt-20 mr-4">
           <Link href="https://github.com/Nahidul-Islam-Siam/" target='_blank'>
