@@ -6,7 +6,7 @@ const PreviousWork: React.FC = () => {
   const projects = [
     {
       title: 'SamFashion',
-      description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
+      description: 'An e-commerce website with distinct routes for Admin, Seller, and Customer, each managing roles like platform settings, product listings, and shopping features',
       imageUrl: 'https://i.postimg.cc/yN0tVn0Y/image.png',
       caseStudyUrl: '#',
       liveLink: 'https://el-fashion.vercel.app/',
