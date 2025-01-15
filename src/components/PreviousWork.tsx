@@ -7,7 +7,7 @@ const PreviousWork: React.FC = () => {
     {
       title: 'SamFashion',
       description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
-      imageUrl: 'https://ibb.co.com/ggyrf4n',
+      imageUrl: 'https://i.postimg.cc/yN0tVn0Y/image.png',
       caseStudyUrl: '#',
       liveLink: 'https://el-fashion.vercel.app/',
       githubLink: 'el-fashion.vercel.app',
