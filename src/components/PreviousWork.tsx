@@ -1,7 +1,16 @@
-import React from 'react';
+
 
 const PreviousWork: React.FC = () => {
   const projects = [
+    {
+      title: 'SamFashion',
+      description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
+      imageUrl: 'https://ibb.co.com/ggyrf4n',
+      caseStudyUrl: '#',
+      liveLink: 'https://el-fashion.vercel.app/',
+      githubLink: 'el-fashion.vercel.app',
+      technologies: ['React', 'Redux','Node.js', 'Express','React','MongoDB','etc']
+    },
     {
       title: 'WorkTrack',
       description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
