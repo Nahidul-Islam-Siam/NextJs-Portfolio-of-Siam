@@ -6,7 +6,7 @@ const PreviousWork: React.FC = () => {
   const projects = [
     {
       title: 'SamFashion',
-      description: 'An e-commerce website with distinct routes for Admin, Seller, and Customer, each managing roles like platform settings, product listings, and shopping features',
+      description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
       imageUrl: 'https://i.postimg.cc/yN0tVn0Y/image.png',
       caseStudyUrl: '#',
       liveLink: 'https://el-fashion.vercel.app/',
@@ -16,7 +16,8 @@ const PreviousWork: React.FC = () => {
     {
       title: 'WorkTrack',
       description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
-      imageUrl: 'https://i.postimg.cc/yN0tVn0Y/image.png',
+      imageUrl: 'https://i.postimg.cc/28FPR0Fk/screencapture-worktrack-employee-management-netlify-app-2025-01-15-16-45-00.png',
+     
       caseStudyUrl: '#',
       liveLink: 'https://worktrack-employee-management.netlify.app/',
       githubLink: 'https://github.com/Nahidul-Islam-Siam/WorkTrack-Client',
