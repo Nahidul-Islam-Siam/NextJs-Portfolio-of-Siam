@@ -1,5 +1,7 @@
 
 
+import React from 'react';
+
 const PreviousWork: React.FC = () => {
   const projects = [
     {
@@ -14,7 +16,7 @@ const PreviousWork: React.FC = () => {
     {
       title: 'WorkTrack',
       description: 'This Project is for a Employee Management Website. Here different routes Admin, HR and Employee. Easch have different Routes',
-      imageUrl: 'https://i.postimg.cc/KvN5LyMq/untitled.png',
+      imageUrl: 'https://i.postimg.cc/yN0tVn0Y/image.png',
       caseStudyUrl: '#',
       liveLink: 'https://worktrack-employee-management.netlify.app/',
       githubLink: 'https://github.com/Nahidul-Islam-Siam/WorkTrack-Client',
